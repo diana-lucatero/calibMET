@@ -79,7 +79,7 @@ for (ngrid in 1:dim(grid)[1]){ # Loop for space :dim(grid)[1]
   ## Ensembles methods
   for (nmet in 1:length(meth)){#length(meth)
     ens_namefile = paste(ObsDir,'/ensembles_c/ens_',meth[nmet],'_g',grid[ngrid,2],'_m',month[nmonth],'.txt',sep='')
-    ens = t(matrix(scan(ens_namefile),nrow=215,ncol=dimIndex[1]*no_ens));ens[ens<0]=0;
+    ens = t(matrix(scan(ens_namefile),nrow=215,ncol=dimIndex[1]*no_ens))
     ## Verification methods
     for (ilead in 1:Nlead){#Nlead
       gens0 = ens[,s0[ilead]:s1[ilead]]
