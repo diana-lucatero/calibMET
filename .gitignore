@@ -1,0 +1,25 @@
+# PNG
+*.png
+
+# TXT
+*.txt
+
+# R history
+*.Rhistory
+
+# Data
+*.nc
+*.dfs2
+
+# MS
+*.xlsx
+*.pptx
+
+# R Data
+*.rdata
+
+# Weird stuff
+bma
+dc
+qm
+obsdir
