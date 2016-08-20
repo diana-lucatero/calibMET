@@ -13,7 +13,7 @@ for (imet in 1:length(meth)){#length(meth)
     pcp[,,imet,ithre] <- t(matrix(scan(name_file),ncol = 662,nrow = 7))
     name_file <- paste0(Dir,'temp/verification_daily/',meth[imet],'_crpss_clim_m',nmonth,'_thre',ithre,'.txt')
     temp[,,imet,ithre] <- t(matrix(scan(name_file),ncol = 724,nrow = 7))
-    name_file <- paste0(Dir,'temp/verification_daily/',meth[imet],'_crpss_clim_m',nmonth,'_thre',ithre,'.txt')
+    name_file <- paste0(Dir,'ref_evap/verification_daily/',meth[imet],'_crpss_clim_m',nmonth,'_thre',ithre,'.txt')
     evap[,,imet,ithre] <- t(matrix(scan(name_file),ncol = 724,nrow = 7))
   }
 }

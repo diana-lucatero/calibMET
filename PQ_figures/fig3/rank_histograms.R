@@ -26,7 +26,7 @@ for (lt in 1:Nlead){
       val = t(matrix(scan(name_file),nrow=(Nens[nmonth]+1),ncol=724))
       valuesT[,imeth] = colSums(val,na.rm  = TRUE)
       # REF EVAPOTRANSOIRATION
-      name_file = paste(ObsDir,'temp/verification_daily/',meth[imeth],'_',quality,'_m',nmonth,'_lt',lt,'.txt',sep="")
+      name_file = paste(ObsDir,'ref_evap/verification_daily/',meth[imeth],'_',quality,'_m',nmonth,'_lt',lt,'.txt',sep="")
       val = t(matrix(scan(name_file),nrow=(Nens[nmonth]+1),ncol=724))
       valuesE[,imeth] = colSums(val,na.rm  = TRUE)
   }

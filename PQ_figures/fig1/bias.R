@@ -26,7 +26,7 @@ for (imeth in 1:length(meth)){#length(meth)
     val = t(matrix(scan(name_file),nrow=7,ncol=724))
     valuesT[nmonth,,imeth] = colMeans(val,na.rm  = TRUE)
     ## Ref Evap
-    name_file = paste(ObsDir,'temp/verification_daily/',meth[imeth],'_',quality,'_m',nmonth,'.txt',sep="")
+    name_file = paste(ObsDir,'ref_evap/verification_daily/',meth[imeth],'_',quality,'_m',nmonth,'.txt',sep="")
     val = t(matrix(scan(name_file),nrow=7,ncol=724))
     valuesE[nmonth,,imeth] = colMeans(val,na.rm  = TRUE)
   } # end loop month
